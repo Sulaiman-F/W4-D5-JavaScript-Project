@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42f2b55299.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./imgs/TimeMachinelogo.png" alt="Logo" />
+            <div>
+                <p>Welcome, <br><span id="user-name"></span></p>
+            </div>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#">Account</a></li>
+            <li class="logout-mobile"><button class="btn" onclick="logout()">Logout</button></li>
+        </ul>
+        <div class="logout">
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section class="profile-page">
+        <div class="profile-card">
+            <div class="profile-img"><img src="./imgs/account.png" alt=""></div>
+            <div class="profile-info">
+                <p id="profile-name"></p>
+                <p id="profile-password"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+
+            <div class="contact-info">
+                <p>Contact us:</p>
+                <p>info@yourcompany.com</p>
+            </div>
+            <div class="address">
+                <p>Address:</p>
+                <p>1234 Street Name, City, Country</p>
+
+            </div>
+            <div class="phone">
+                <p>Phone:</p>
+                <p>+1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./main.js"></script>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/Tuwaiq-Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/42f2b55299.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./imgs/TimeMachinelogo.png" alt="Logo" />
+            <div>
+                <p>Welcome, <br><span id="user-name"></span></p>
+            </div>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./account.html">Account</a></li>
+            <li class="logout-mobile"><button class="btn" onclick="logout()">Logout</button></li>
+        </ul>
+        <div class="logout">
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+
+    <section id="events" class="event-section">
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/moon-landing.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Moon Landing -
+                    <span class="date">1969</span>
+                </h1>
+                <p>On July 20, 1969, Apollo 11 successfully landed the first humans on the Moon. Neil Armstrong became
+                    the first person to walk on the Moon, saying the famous words: “That's one small step for man, one
+                    giant leap for mankind.”
+                </p>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/Interbet.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Invention of the Internet -
+                    <span class="date">1983</span>
+                </h1>
+                <p>The modern internet was born in 1983 when ARPANET adopted the TCP/IP protocol. This laid the
+                    foundation for the global network we rely on today.
+                </p>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/ChatGPT-Logo.png" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Public Launch of ChatGPT -
+                    <span class="date">In November 2022</span>
+                </h1>
+                <p>OpenAI released ChatGPT to the public, revolutionizing how people interact with
+                    artificial intelligence. The chatbot quickly gained global attention for its ability to generate
+                    human-like responses and assist with a wide range of tasks.
+                </p>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/Tuwaiq-Academy.webp" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Tuwaiq Academy Launch -
+                    <span class="date">2019</span>
+                </h1>
+                <p>Tuwaiq Academy was launched in 2019 as one of Saudi Arabia’s leading technology and programming
+                    academies. It offers intensive bootcamps and training programs in areas like cybersecurity,
+                    artificial intelligence, and software development, empowering thousands of youth to become future
+                    tech leaders in the Kingdom.
+                </p>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/RiyadhSeason_w-1.webp" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Riyadh Season Opening -
+                    <span class="date">In October 2019</span>
+                </h1>
+                <p>Saudi Arabia launched the first Riyadh Season, a large-scale entertainment and
+                    cultural festival. The event featured concerts, international shows, sports, and art exhibitions,
+                    attracting millions of visitors and showcasing a new era of tourism and entertainment in the
+                    Kingdom.
+                </p>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="img-container">
+                <img src="./imgs/iphone.webp" alt="">
+            </div>
+            <div class="text-container">
+                <h1>Launch of the First iPhone -
+                    <span class="date">In January 2007</span>
+                </h1>
+                <p>Apple introduced the first iPhone, revolutionizing the mobile phone industry. With
+                    its touchscreen interface and internet capabilities, the iPhone marked the beginning of the modern
+                    smartphone era.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="container-event">
+            <div class="img-container">
+                <input type="url" name="event-image-url" id="event-image-url" placeholder="Event Image URL">
+            </div>
+            <div class="input-container">
+                <input type="text" name="event-title" id="event-title" placeholder="Event Title">
+                <input type="text" name="event-date" id="event-date" placeholder="Event Date Year">
+                <input class="description" type="text" name="event-description" id="event-description"
+                    placeholder="Event Description">
+                <button class="btn-event" onclick="addEvent()">Add Event</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+
+            <div class="contact-info">
+                <p>Contact us:</p>
+                <p>info@yourcompany.com</p>
+            </div>
+            <div class="address">
+                <p>Address:</p>
+                <p>1234 Street Name, City, Country</p>
+
+            </div>
+            <div class="phone">
+                <p>Phone:</p>
+                <p>+1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./main.js"></script>
+
+</html>

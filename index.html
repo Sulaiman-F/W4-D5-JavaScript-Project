@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/TimeMachinelogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="login-page">
+        <div class="welcome-sec">
+            <img src="./imgs/TimeMachinelogo.png" alt="Time Machine Logo">
+            <h1>Welcome</h1>
+            <p><strong>Time Machine</strong> — your gateway to explore history like never before! Discover key events,
+                add your own.
+            </p>
+        </div>
+        <div class="login-sec">
+            <div class="container-card" id="signup-form">
+                <h2>Create Account</h2>
+                <div class="form-group">
+                    <input type="text" id="signup-username" placeholder="Username" />
+                    <p class="error" id="signup-username-error"></p>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signup-password" placeholder="Password" />
+                    <p class="error" id="signup-password-error"></p>
+                </div>
+                <button class="btn" onclick="signup()">Sign Up</button>
+                <a class="link" onclick="toggleForms('login')">Already have an account? Log In</a>
+            </div>
+
+            <div class="container-card hidden" id="login-form">
+                <h2>Log In</h2>
+                <div class="form-group">
+                    <input type="text" id="login-username" placeholder="Username" />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Password" />
+                    <p class="error" id="login-error"></p>
+                </div>
+                <div class="btns-form">
+                    <button class="btn" onclick="login()">Log In</button>
+                    <button class="btn" onclick="guest()">Continue as a Guest</button>
+                </div>
+                <a class="link" onclick="toggleForms('signup')">Don’t have an account? Sign Up</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./main.js"></script>
+
+</html>
